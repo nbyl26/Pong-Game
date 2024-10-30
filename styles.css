@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.game-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+#pong {
+    background: linear-gradient(135deg, #2a2a72, #009fff);
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+}
+
+#start-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+#start-button {
+    padding: 15px 30px;
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.5);
+}
+
+#start-button:hover {
+    background-color: #ff4c94;
+    transform: scale(1.05);
+}
+
+#scoreboard {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-size: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
